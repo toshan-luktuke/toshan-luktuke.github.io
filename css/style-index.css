@@ -1,0 +1,132 @@
+body{
+  background-color: black;
+  font-family: sans-serif;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+   height:100vh;
+}
+
+h1{
+  font-size: 48;
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 1%;
+  margin-top : 15%;
+}
+#particles-js{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height : 100%;
+  width : 100%;
+  z-index: -1;
+}
+#web-head{
+  float : left;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.topnav {
+  background-color: black;
+  opacity: 0.3;
+  overflow: hidden;
+  transition: 1s;
+  border-bottom: white solid;
+  height:7.5vh;
+}
+
+.topnav:hover{
+  /* border-bottom: white solid; */
+  background-color: black;
+  opacity: 0.9;
+
+}
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  border-left: solid ;
+
+}
+#home{
+  border-left : none;
+}
+
+.topnav a:hover {
+  background-color: #353839;
+  color: white;
+  text-decoration: underline;
+
+}
+
+/* .topnav a.active {
+  background-color: #353839;
+
+} */
+
+#listGames{
+  align-items: center;
+  /* border-color: white;
+  border-style: groove; */
+  text-align: center;
+}
+
+#insta{
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  background-color: black;
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+li{
+  flex: auto;
+  text-align: center;
+  border-color: white;
+  border-style: solid;
+  margin: auto;
+  width: 50%;
+  padding: 1%;
+
+}
+
+.game-button{
+  font-family: sans-serif;
+  font-size: 24;
+  color: white;
+  border: white;
+  border-style: solid;
+  background-color: black;
+  padding: 0.5%;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.game-button:hover{
+  color: black;
+  background-color: white;
+}
+
+.social{
+  border: none;
+  background-color: black;
+  color : white;
+}
+
+.social:active{
+  color: white;
+}
+
+/* Animation CSS */

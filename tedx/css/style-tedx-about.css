@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0; 
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: black;
+}
+
+
+#container{
+  width: 50%;
+  margin: auto;
+  /* border: solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#line {
+  float: left;
+  width : 10%;
+  /* border: dotted; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#info{
+  display: inline;
+  /* border: solid; */
+  float:left;
+  width:80%; 
+  
+}
+
+/* list highlighting */
+ul{
+  list-style: none;
+}
+li{
+   border :white solid; 
+}
+#li1{
+  width : 1em;
+  height : 1em;
+  border-radius: 50%;
+  margin-top: -6.5em;
+}
+
+#li2{
+  width : 1em;
+  height : 1em;
+  margin-top : 8.8em;
+  border-radius: 50%;
+  
+
+}
+#li3{
+  width : 1em;
+  height : 1em;
+  margin-top : 8.8em;
+  border-radius: 50%;
+  
+}
+
+li:active{
+  background-color: white;
+}
+/* end of list highlighting */
+
+.headings{
+  color: #B22222;
+}
+
+h3{
+  width: auto;
+  text-align: left;
+  padding-top: 0.2em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  /* border:solid red; */
+
+}
+
+p{
+  width: auto;
+  /* border: solid; */
+  
+  margin-top: 0.1em;
+}
+.backplate{
+  transition: all .2s ease-in-out;
+  margin : 0.5em;
+  padding: 0.3em;
+  padding-left: 0.4em;
+  padding-top: 0px;
+  padding-bottom: 0.1em;
+  opacity: 0.9;
+  border-radius: 0.2em;
+  background-color: #F5F5F5;
+}
+.backplate:hover{
+  transform: scale(1.01);
+  opacity: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 1000px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  #container{
+    width :auto;
+  }
+  #info{
+    width:auto;
+  }
+  #line{
+    display:none;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Animation */
+.backplate {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+  }
+  ul{
+    animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+  }
+  @keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
